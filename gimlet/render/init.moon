@@ -52,7 +52,7 @@ html = (o, p) ->
 
 		rendered_template = template args.data or {}
 		if layout
-			data = args.data
+			data = args.data or {}
 			data.template = rendered_template
 			p.response\write layout data or {}
 			return
@@ -69,9 +69,8 @@ json = (o, p) ->
 			p.response\write json.encode args
 
 Render = (args = {}) ->
-	for k,v in *options
+	for k,v in pairs options
 		args[k] = v unless args[k]
-
 
 	(p) ->
 		p.gimlet\map 'render', {
