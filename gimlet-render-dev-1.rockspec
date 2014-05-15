@@ -24,6 +24,7 @@ build = {
 	type = "builtin",
 	modules = {
 		["gimlet.render"] = "gimlet/render/init.lua",
+		["gimlet.render.version"] = "gimlet/render/version.lua",
 	},
 }
 
