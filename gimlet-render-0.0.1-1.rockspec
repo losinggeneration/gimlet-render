@@ -1,8 +1,9 @@
 package = "gimlet-render"
-version = "dev-1"
+version = "0.0.1-1"
 
 source = {
-	url = "git://github.com/losinggeneration/gimlet-render.git"
+	url = "git://github.com/losinggeneration/gimlet-render.git",
+	branch = "0.0.1"
 }
 
 description = {
@@ -14,7 +15,7 @@ description = {
 
 dependencies = {
 	"lua >= 5.1",
-	"gimlet-cocktail >= " .. version,
+	"gimlet-cocktail >= 0.1.0",
 	"luafilesystem >= 1.5",
 	"lua-cjson >= 2.1.0",
 	"etlua >= 1.2.0",
